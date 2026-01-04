@@ -10,6 +10,7 @@ conda create --prefix ./.venv python=3.11
 conda activate ./.venv
 ```
 **Folder structure**
+```
 CinemaSeatBooking/
 │
 ├── venv/                   # Virtual environment
@@ -27,7 +28,7 @@ CinemaSeatBooking/
 │
 └── data/                   
     └── layout.json
-
+```
 **Step3:**
 ```
 conda install jupyter
