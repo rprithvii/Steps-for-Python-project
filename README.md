@@ -13,10 +13,11 @@ conda activate ./.venv
 ```
 CinemaSeatBooking/
 │
-├── venv/                   # Virtual environment
+├── .venv/                   # Virtual environment
 ├── main.py                 # Main entry point
 ├── requirements.txt
-│
+├── .gitignore
+|
 ├── notebooks/              # <--- New Sandbox Folder
 │   ├── 01_test_logic.ipynb # Experimenting with Seat assignments
 │   └── 02_prototyping.ipynb# Testing UI/Flow
@@ -72,4 +73,52 @@ conda env export > environment.yml
 **Step9: For a new project, create environment based on the .yml file**
 ```
 conda env create --prefix ./venv --file environment.yml
+```
+
+**Step10: Create the .gitignore file: Paste this content in the file**
+```
+# Python bytecode (compiled files)
+__pycache__/
+*.py[cod]
+
+# Virtual Environments (The most important part!)
+.venv/
+venv/
+env/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Data files (optional: ignore if you don't want to upload your seat data)
+data/*.json
+```
+**Step11: Push to github repo**
+```
+# Initialize this folder as a Git repository
+git init
+
+# Add all your files to the staging area (Git will ignore .venv because of your .gitignore!)
+git add .
+
+# Create your first commit
+git commit -m "Initial commit: project structure and environment setup"
+
+# Rename your branch to main (standard practice)
+git branch -M main
+
+# Link your local folder to your GitHub repo (Paste your URL here)
+git remote add origin https://github.com/your-username/CinemaSeatBooking.git
+
+# Push your code to GitHub
+git push -u origin main
+
+# In subsequent pushes, you just follow these:
+git add .
+git commit - m "Description of the change"
+git push
 ```
