@@ -1,12 +1,13 @@
 # Steps-for-Python-project
 
 ```
-Step1:
+**Step1:**
 conda create --prefix ./.venv python=3.11
 
-Step2:
+**Step2:**
 conda activate ./.venv
 
+**Folder structure**
 CinemaSeatBooking/
 │
 ├── venv/                   # Virtual environment
@@ -25,14 +26,11 @@ CinemaSeatBooking/
 └── data/                   
     └── layout.json
 
-Step3:
+**Step3:**
 conda install jupyter
 
-Step4:
+**Step4:**
 conda install ipykernel
 
-Step5:
+**Step5:**
 python -m ipykernel install --user --name=cinema_env --display-name "Python (Cinema Project)"
-
-
-
