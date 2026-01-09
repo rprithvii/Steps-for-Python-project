@@ -62,7 +62,7 @@ python-dotenv        # Helps manage environment variables (like file paths)
 ```
 **Step7: Install packages from requirements.txt file**
 ```
-conda install --file requirements.txt
+pip install --r requirements.txt
 ```
 
 **Step8: Save environment set up to .yml file**
