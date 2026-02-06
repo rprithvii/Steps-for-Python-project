@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 **Step8: Save environment set up to .yml file**
 ```
-conda env export > environment.yml
+conda env export --from-history > environment.yml
 ```
 
 **Step9: For a new project, create environment based on the .yml file**
